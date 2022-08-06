@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>My Portfolio</title>
+    <!-- icon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>   
+
+    <!-- bootstrap 5 -->
+    
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+      <div class="container-fluid">
+        <div class="navabr-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#home" class="navbar-brand page-scroll" id="brand">Sastra Pradana</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about" class="page-scroll">about</a></li>
+            <li><a href="#portfolio"class="page-scroll">Portfolio</a></li>
+            <li><a href="#contact"class="page-scroll">Contact</a></li>
+          </ul>
+        </div> 
+      </div>
+    </nav>
+
+
+
+    <!-- end -->
+    
+    <!-- jumbotron -->
+    <div class="jumbotron text-center" id="home">
+      <img src="img/IMG_20220222_230832.jpg" class="img-circle">
+      <h1>Sastra Pradana</h1>
+      <p>Mahasiswa | Web Desain</p>
+    </div>
+    <!-- akhir Jumbotron -->
+
+    <!-- about -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-center">About</h2>
+            <hr>
+          </div>
+          <div class="col-sm-5 img-fluid tanjiro float-left"></div>
+          <div class="col-sm-5 text-center biodata">
+            <h3>My Biodata</h3>
+            <ul>
+              <li>Nama: Sastra Pradana</li>
+              <li>Tgl lahir : 06 Januari 2003</li>
+              <li>Pendidikan Terakhir: SMK</li>
+              <li>Status : Mahasiswa </li>
+            </ul>
+            <div class="Skill">
+              <h3>My Skill</h3>
+              <div class="gambar">
+                <div class="gambar1"></div>
+                <div class="gambar2"></div>
+                <div class="gambar3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir about -->
+
+    <!-- Portofolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>Portfolio</h2>
+            <hr>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="./img/1.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="./img/1.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="./img/1.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="./img/1.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="./img/1.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="./img/1.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- akhir Portofolio -->
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>contact</h2>
+            <hr>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <form>
+              <div class="form-group">
+                <label for="Nama"><i class="glyphicon glyphicon-user"></i></label>
+                <input type="text" id="Nama" class="form-control" placeholder="Masukkan Nama">
+              </div>
+              <div class="form-group">
+                <label for="Email"><i class="glyphicon glyphicon-envelope"></i></label>
+                <input type="text" id="Email" class="form-control" placeholder="Masukkan Email">
+              </div>
+              <div class="form-group">
+                <label for="Telepon"><i class="glyphicon glyphicon-earphone"></i></label>
+                <input type="tel" id="Tel" class="form-control" placeholder="Masukkan No Telepon">
+              </div>
+
+              <select class="form-control">
+                <option>-- Pilih Kategori --</option>
+                <option>Web Design</option>
+                <option>Web Development</option>
+              </select>
+              <div class="form-group">
+                <label for="Pesan"></label>
+                <textarea class="form-control" rows="10" placeholder="Masukkan Pesan"></textarea> 
+              </div>                            
+              <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-12">
+            <p>&copy; copyright 2022 | built with <i class="glyphicon glyphicon-heart"></i> by. <a href="http://instagram.com/sastrapradn">Sastra Pradana</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <a href="http://facebook.com/sastrapradana"><i class='bx bxl-facebook'></i></a>
+            <a href="http://instagram.com/sastrapradn"><i class='bx bxl-instagram'></i></a>
+            <a href="http://twitter.com/sastrapradana16"><i class='bx bxl-twitter'></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- akhir -->
+
+    <!-- <div class="row" id="row">
+          <div class="col-sm-5 col-sm-offset-1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic ea fuga blanditiis praesentium, illum, iure velit dicta beatae laborum ab ducimus molestiae perferendis eum, incidunt neque amet consectetur debitis suscipit.</p>
+          </div>
+          <div class="col-sm-5">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam esse voluptatem quos! Aut vel cupiditate quis, natus pariatur dicta commodi corporis ducimus fugit consequatur voluptatem iusto adipisci </p>
+          </div>
+        </div> -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <!-- JS BTS 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,242 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Mono:wght@100;500&family=Roboto:wght@100&family=Ubuntu&display=swap');
+
+
+html {
+    position: relative;
+}
+
+body {
+    margin-bottom: 120px;
+    margin-top: 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar {
+    box-shadow: 1px 1px 10px black;
+}
+
+
+#brand {
+    color: #0a0a0a;
+    font-family:cursive;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.8s;
+}
+
+#brand:hover {
+    background-color: #2F4F4F;
+}
+
+#navbar ul li a {
+    color: black;
+    font-family: cursive;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+}
+
+#navbar ul li a:hover {
+    background-color: #2F4F4F;
+}
+
+
+.jumbotron {
+    background-image: url(img/headers-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 -100px;
+    overflow: hidden;
+    margin-top: -10px;
+    position: relative;
+}
+
+
+.jumbotron img {
+    width: 200px;
+    border: 3px solid #eaeaea;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.jumbotron h1, .jumbotron p {
+    text-shadow: 1px 1px 10px rgb(219, 216, 216);
+    color: black;
+}
+
+hr {
+    width: 250px;
+    border-top: 3px solid black;
+}
+
+section {
+    min-height: 400px;
+}
+
+#row {
+    padding-top: 20px;
+}
+
+.about {
+    background-image: url(img/bg\ putih.jpg);
+    background-size: cover;
+    color: black;
+    margin-top: -30px;
+    text-align: center;
+}
+
+.row {
+    color: black;
+    font-size: 17px;
+}
+
+.portfolio {
+    background-image: url(img/wallpaperr\ portfolio.jpg);
+    background-size: cover;
+    color: black;
+}
+
+.tanjiro {
+    width: 600px;
+    height: 600px;
+    background-image: url(img/tanjiro.jpg);
+    background-size: cover;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    transition: .5s;
+}
+
+.tanjiro:hover {
+    background-image: url(img/poto\ saya.jpg);
+    background-size: cover;
+    background-position: 0 -110px;
+}
+
+.biodata {
+    margin-top: 60px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.biodata h3 {
+    font-size: 35px;
+    text-transform:uppercase;
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.biodata ul li {
+    font-size: 2rem;
+    padding-top: 10px;
+    list-style-type: none;
+    text-align: center;
+    margin-right: 35px;
+}
+
+.skill {
+    padding-top: 100px;
+}
+
+
+.gambar {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar1 {
+    background-image: url(img/htmllogo.png);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.gambar2 {
+    background-image: url(img/csslogo.png);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.gambar3 {
+    background-image: url(img/jslogo.png);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact {
+    min-height: 700px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #333;
+    color: #aaa;
+    padding-top: 30px;
+}
+
+footer p {
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+footer p i {
+    color: salmon;
+}
+
+
+
+
+/* android version */
+@media (max-width: 576px) {
+    .tanjiro {
+        width: 200px;
+        height: 200px;
+        background-image: url(img/tanjiro.jpg);
+        background-size: cover;
+        margin-bottom: 10px;
+        box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+        margin: auto;
+    }
+
+    .biodata h3 {
+        margin-left: -50px;
+    }
+
+    .biodata ul li {
+        margin-left: -50px;
+    }
+
+    .gambar {
+        display: block;
+    }
+
+    .gambar1 {
+        margin: auto;
+        margin-left: 70px;
+    }
+
+    .gambar2 {
+        margin-left: 70px;
+        margin-top: 10px;
+    }
+
+    .gambar3 {
+        margin-left: 70px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .tanjiro:hover {
+        background-image: url(img/poto\ saya.jpg);
+        background-size: cover;
+        background-position: 0 -60px;
+    }
+
+}
