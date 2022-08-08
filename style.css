@@ -58,9 +58,9 @@ body {
     box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
 
-.jumbotron h1, .jumbotron p {
-    text-shadow: 1px 1px 10px rgb(219, 216, 216);
+#home .lead,.lead2 {
     color: black;
+    margin-bottom: -5px;
 }
 
 hr {
@@ -128,11 +128,16 @@ section {
     padding-top: 10px;
     list-style-type: none;
     text-align: center;
-    margin-right: 35px;
 }
 
-.skill {
-    padding-top: 100px;
+.Skill {
+    padding-top: 30px;
+}
+
+.Skill h3 {
+    font-size: 35px;
+    text-transform:uppercase;
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
 
 
@@ -195,6 +200,25 @@ footer p i {
 
 /* android version */
 @media (max-width: 576px) {
+    #home .lead {
+        color: black;
+        font-size: 50px;
+        text-shadow: 1px 1px 10px rgba(235, 232, 232, 0.5);
+    }
+
+    #home .lead2 {
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+        text-shadow: 1px 1px 10px rgba(235, 232, 232, 0.5);
+    }
+
+
+
+
+
+
+
     .tanjiro {
         width: 200px;
         height: 200px;
@@ -210,28 +234,16 @@ footer p i {
     }
 
     .biodata ul li {
-        margin-left: -50px;
+        margin-left: -90px;
     }
+
 
     .gambar {
-        display: block;
+        display: flex;
+        margin-bottom: 20px;
     }
 
-    .gambar1 {
-        margin: auto;
-        margin-left: 70px;
-    }
-
-    .gambar2 {
-        margin-left: 70px;
-        margin-top: 10px;
-    }
-
-    .gambar3 {
-        margin-left: 70px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
+   
 
     .tanjiro:hover {
         background-image: url(img/poto\ saya.jpg);

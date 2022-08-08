@@ -9,8 +9,8 @@
     <!-- icon -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>   
 
-    <!-- bootstrap 5 -->
-    
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -53,9 +53,9 @@
     
     <!-- jumbotron -->
     <div class="jumbotron text-center" id="home">
-      <img src="img/IMG_20220222_230832.jpg" class="img-circle">
-      <h1>Sastra Pradana</h1>
-      <p>Mahasiswa | Web Desain</p>
+      <img src="img/IMG_20220222_230832.jpg" class="img-circle" data-aos="flip-right">
+      <h1 class="lead"></h1>
+      <p class="lead2"></p>
     </div>
     <!-- akhir Jumbotron -->
 
@@ -64,19 +64,21 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <h2 class="text-center">About</h2>
+            <h2 class="text-center" id="judul">About</h2>
             <hr>
           </div>
-          <div class="col-sm-5 img-fluid tanjiro float-left"></div>
-          <div class="col-sm-5 text-center biodata">
+          <div class="col-sm-5 img-fluid tanjiro float-left" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300"></div>
+          <div class="biodata" data-aos="fade-down" data-aos-easing="linear"
+              data-aos-duration="500" data-aos-delay="200" data-aos-offset="300">
             <h3>My Biodata</h3>
-            <ul>
-              <li>Nama: Sastra Pradana</li>
-              <li>Tgl lahir : 06 Januari 2003</li>
-              <li>Pendidikan Terakhir: SMK</li>
-              <li>Status : Mahasiswa </li>
-            </ul>
-            <div class="Skill">
+              <ul>
+                <li>Nama: Sastra Pradana</li>
+                <li>Tgl lahir : 06 Januari 2003</li>
+                <li>Pendidikan Terakhir: SMK</li>
+                <li>Status : Mahasiswa </li>
+              </ul>
+          </div>
+            <div class="Skill" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
               <h3>My Skill</h3>
               <div class="gambar">
                 <div class="gambar1"></div>
@@ -95,7 +97,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center">
-            <h2>Portfolio</h2>
+            <h2 id="judul">Portfolio</h2>
             <hr>
           </div>
         </div>
@@ -146,7 +148,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center">
-            <h2>contact</h2>
+            <h2 id="judul">contact</h2>
             <hr>
           </div>
         </div>
@@ -224,7 +226,20 @@
     <!-- JS BTS 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-
-
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- gs script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+   <script>
+    gsap.registerPlugin(TextPlugin);
+    gsap.to('.lead', {duration: 1.5, text: 'Sastra Pradana'});
+    gsap.to('.lead2', {duration: 1,delay: 1.5, text: 'Mahasiswa | Web Desain'});
+   </script>
+    
+   
   </body>
 </html>
